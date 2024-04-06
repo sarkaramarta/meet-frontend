@@ -1,0 +1,11 @@
+.phone-signin {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+.phone-signin .phone-content {
+  text-align: center;
+}
+.phone-signin .phone-content button {
+  margin-top: 10px;
+}/*# sourceMappingURL=Phone.css.map */
