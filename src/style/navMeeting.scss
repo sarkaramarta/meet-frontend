@@ -1,0 +1,32 @@
+.Navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .nav-logo {
+            width: 50px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        .nav-heading {
+            margin: auto 0;
+        }
+        .add-meeting-btn {
+            margin: auto 0;
+            border: none;
+            height: auto;
+            border-radius: 50%;
+                height: 42px !important;
+                width: fit-content;
+                overflow: hidden;
+                background-color: white;
+            i {
+                overflow: hidden;
+                font-size: 30px;
+                height: 30px !important;
+                
+                border-radius: 50%;
+            }
+        }
+    }
+    
+}

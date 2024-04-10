@@ -1,0 +1,29 @@
+.Navbar .container {
+  display: flex;
+  justify-content: space-between;
+}
+.Navbar .container .nav-logo {
+  width: 50px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+.Navbar .container .nav-heading {
+  margin: auto 0;
+}
+.Navbar .container .add-meeting-btn {
+  margin: auto 0;
+  border: none;
+  height: auto;
+  border-radius: 50%;
+  height: 42px !important;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: hidden;
+  background-color: white;
+}
+.Navbar .container .add-meeting-btn i {
+  overflow: hidden;
+  font-size: 30px;
+  height: 30px !important;
+  border-radius: 50%;
+}/*# sourceMappingURL=navMeeting.css.map */

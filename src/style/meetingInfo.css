@@ -1,0 +1,77 @@
+.Link-meet {
+  text-decoration: none;
+  color: black;
+}
+.Link-meet .meeting-info-div {
+  background-color: white;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.295);
+  padding: 30px;
+  margin: 20px 0;
+  border-radius: 2px;
+}
+.Link-meet .meeting-info-div .meeting-title {
+  font-size: 25px;
+}
+.Link-meet .meeting-info-div .date-time {
+  display: flex;
+}
+.Link-meet .meeting-info-div .date-time .date {
+  border: 1px solid rgb(178, 119, 237);
+  padding: 10px 20px;
+  background-color: rgba(238, 214, 251, 0.308);
+  border-radius: 2px;
+}
+.Link-meet .meeting-info-div .date-time .time {
+  margin-left: 30px;
+  border: 1px solid rgb(64, 162, 82);
+  padding: 10px 20px;
+  background-color: rgba(214, 251, 220, 0.308);
+  border-radius: 2px;
+}
+.Link-meet .meeting-info-div .duration {
+  margin-top: 20px;
+  color: blue;
+  font-size: 16px;
+}
+.Link-meet .meeting-info-div .member-going {
+  display: inline;
+}
+.Link-meet .meeting-info-div .member-going img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin-right: -10px;
+}
+.Link-meet .meeting-info-div .member-going > p {
+  display: inline;
+  margin-left: 20px;
+  margin-top: auto;
+}
+.Link-meet .meeting-info-div .invited-by {
+  float: right;
+}
+.Link-meet .meeting-info-div .invited-by img {
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+.Link-meet .meeting-info-div .invited-by > p {
+  display: inline;
+  margin-left: 10px;
+}
+.Link-meet .meeting-info-div .status {
+  margin-top: 20px;
+}
+.Link-meet .meeting-info-div .status .button1 {
+  padding: 5px 50px;
+  border: 0;
+  border-right: 1px solid black;
+  background-color: white;
+  color: red;
+}
+.Link-meet .meeting-info-div .status .button2 {
+  padding: 5px 50px;
+  border: none;
+  background-color: white;
+  color: blue;
+}/*# sourceMappingURL=meetingInfo.css.map */
