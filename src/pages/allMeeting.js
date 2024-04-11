@@ -12,32 +12,32 @@ const AllMeeting = () => {
   // setPhone(phoneNo);
 
   const apiCall = () => {
-    if(data){
-      data.map((e) => {
-        axios
-          .post("http://localhost:4000/meetDetails", {
+      data?.map(async(e) => {
+        const response1 = await axios.post(
+          "http://localhost:4000/meetDetails",{
             meetId: e.meetId,
-          })
-          .then(function (res) {
-            meetData.push({
-              data: res.data.data.data
-            });
-          });
+          }
+        );
+        meetData.push({
+          data: response1.data.data.data
+        })
       });
-    }
+      console.log(meetData)
+  };
+  const getApiData = async () => {
+    const response = await axios.post(
+      "http://localhost:4000/getAllMeet",{
+        invites: "+916290753490"
+      }
+    );
+  
+    // update the state
+    setData(response.data.data.data);
+    console.log(data)
+    apiCall();
   };
   useEffect(() => {
-    axios
-      .post("http://localhost:4000/getAllMeet", {
-        invites: "+916290753490"
-      })
-      .then(function (res) {
-        setData(res.data.data.data);
-        apiCall();
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
+   getApiData();
   },[]);
   return (
     <div className="meeting-div">

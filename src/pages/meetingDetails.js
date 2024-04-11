@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom';
 import axios from "axios"
 import { useSelector } from "react-redux";
+import "../style/meetingDetails.css"
 const MeetingDetails = () => {
 
   const { id } = useParams();
@@ -43,11 +44,10 @@ const MeetingDetails = () => {
       <div className='meetingDetails'>
       <h3>{data?.title}</h3>
       <div className='date-time'>
-        <div className='date'><i className="bi bi-calendar"></i></div>
-        <div className='time'><i className="bi bi-clock"></i></div>
+        <div className='date'><i className="bi bi-calendar"></i>{data.date}</div>
+        <div className='time'><i className="bi bi-clock"></i>{data.time}</div>
       </div>
       <div className='invited-by'>
-            <img src="" />
             <p>Created by Amarta</p>
         </div>
         <h4>DESCRIPTION</h4>
@@ -56,13 +56,13 @@ const MeetingDetails = () => {
         <p>latitude:{data?.lat} </p>
         <p>longitude:{data?.log}</p>
         <h4>People Invited</h4>
-        <ul>
+        <ul >
           {
            meetData?.acceptedBy?.map((e)=>{
             if(e!==phoneNo){
               return (
               
-                <li><p>{e}</p><p>accepted</p></li>
+                <li className='accepted'>{e}<p>accepted</p></li>
               ) 
             }
             
@@ -71,14 +71,14 @@ const MeetingDetails = () => {
           {
             meetData?.pending?.map((e)=>{
              return (
-              <li><p>{e}</p><p>pending</p></li>
+              <li className='pending'>{e}<p>pending</p></li>
              )
             })
           }
           {
             meetData?.rejectedBy?.map((e)=>{
              return (
-              <li><p>{e}</p><p>Rejected</p></li>
+              <li className='rejected'>{e}<p>Rejected</p></li>
              )
             })
           }

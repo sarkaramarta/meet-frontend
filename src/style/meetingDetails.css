@@ -1,0 +1,41 @@
+.container .meetingDetails {
+  padding: 30px;
+}
+.container .meetingDetails .date-time {
+  display: flex;
+}
+.container .meetingDetails .date-time .date {
+  padding: 10px;
+  background-color: lightgreen;
+  border: 1px solid rgb(16, 231, 16);
+  border-radius: 3px;
+}
+.container .meetingDetails .date-time .date i {
+  margin-right: 10px;
+}
+.container .meetingDetails .date-time .time {
+  margin-left: 10px;
+  padding: 10px;
+  background-color: lightyellow;
+  border: 1px solid rgb(218, 218, 53);
+  border-radius: 3px;
+}
+.container .meetingDetails .date-time .time i {
+  margin-right: 10px;
+}
+.container .meetingDetails h4 {
+  color: blueviolet;
+}
+.container .meetingDetails ul {
+  text-decoration: none;
+  list-style: none;
+}
+.container .meetingDetails ul .accepted p {
+  color: green;
+}
+.container .meetingDetails ul .pending p {
+  color: yellow;
+}
+.container .meetingDetails ul .rejected p {
+  color: red;
+}/*# sourceMappingURL=meetingDetails.css.map */
